@@ -52,8 +52,8 @@ pipeline {
 	      steps{
 	        withDockerRegistry([credentialsId: "dockerhub-partha", url: ""]) {
 	          sh 'printenv'
-	          sh 'docker build -t parthamaiti/samplewebapp:"test" .'
-	          sh 'docker push parthamaiti/samplewebapp:"test"'
+	          sh 'docker build -t parthamaiti/samplewebapp:"test1" .'
+	          sh 'docker push parthamaiti/samplewebapp:"test1"'
 	        }
 	      }
 	    }
