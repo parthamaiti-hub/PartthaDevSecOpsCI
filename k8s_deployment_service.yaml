@@ -16,7 +16,7 @@ spec:
         app: devsecops
     spec:
       containers:
-      - image: parthamaiti/samplewebapp:test
+      - image: parthamaiti/samplewebapp1:test
         name: devsecops-container
 ---
 apiVersion: v1
