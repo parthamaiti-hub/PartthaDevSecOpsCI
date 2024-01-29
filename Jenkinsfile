@@ -23,7 +23,7 @@ pipeline {
             }
                 
         } 
-         /*
+        /*
         stage('Mutation testing using PIT') {
             steps {
               bat "mvn org.pitest:pitest-maven:mutationCoverage"
