@@ -50,7 +50,8 @@ pipeline {
         
         stage('Docker build and Push') {
 	      steps{
-	        withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
+	        withDockerRegistry([credentialsId: "dockerhub-partha", url: ""]) {
+	          sh 'printenv'
 	          sh 'docker build -t parthamaiti/samplewebapp:"test" .'
 	          sh 'docker push parthamaiti/samplewebapp:"test"'
 	        }
